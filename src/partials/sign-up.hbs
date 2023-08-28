@@ -1,0 +1,87 @@
+<form class="form">
+  <fieldset class="form__fieldset">
+    <legend
+      class="text text__description text_primary form__legend"
+    >Регистрация</legend>
+    <label for="email" class="form__label">Почта</label>
+    <input
+      type="email"
+      name="email"
+      id="email"
+      class="text text__input text_primary form__input"
+      value={{email}}
+    />
+    <p class="text_error form__error form__error_hidden">Неправильная почта</p>
+
+    <label for="login" class="form__label">Логин</label>
+    <input
+      type="text"
+      name="login"
+      id="login"
+      class="text text__input text_primary form__input"
+      value={{login}}
+    />
+    <p class="text_error form__error form__error_hidden">Неправильный логин</p>
+
+    <label for="first_name" class="form__label">Имя</label>
+    <input
+      type="text"
+      name="first_name"
+      id="first_name"
+      class="text text__input text_primary form__input"
+      value={{firstName}}
+    />
+    <p class="text_error form__error form__error_hidden">Неправильное имя</p>
+
+    <label for="second_name" class="form__label">Фамилия</label>
+    <input
+      type="text"
+      name="second_name"
+      id="second_name"
+      class="text text__input text_primary form__input"
+      value={{secondName}}
+    />
+    <p class="text_error form__error form__error_hidden">Неправильная фамилия</p>
+
+    <label for="phone" class="form__label">Телефон</label>
+    <input
+      type="tel"
+      name="phone"
+      id="phone"
+      class="text text__input text_primary form__input"
+      value={{phone}}
+    />
+    <p class="text_error form__error form__error_hidden">Неправильный телефон</p>
+
+    <label for="password" class="form__label">Пароль</label>
+    <input
+      type="password"
+      name="password"
+      id="password"
+      class="text text__input text_primary form__input"
+      value={{password}}
+    />
+    <p class="text_error form__error form__error_hidden">Неправильный пароль</p>
+
+    <label for="password_repeat" class="form__label">Пароль (еще раз)</label>
+    <input
+      type="password"
+      name="password_repeat"
+      id="password_repeat"
+      class="text text__input text_primary form__input"
+      value={{passwordRepeat}}
+    />
+    <p class="text_error form__error form__error_hidden">Неправильный пароль</p>
+  </fieldset>
+  <button
+    type="submit"
+    class="text text__input text_button form__submit form__submit_disabled"
+    disabled
+  >
+    Авторизоваться
+  </button>
+  <button class="text text__caption text_ascendant form__link">Нет аккаунта?</button>
+</form>
+
+<link rel="stylesheet" href="../styles/form.css" />
+<link rel="stylesheet" href="../styles/text.css" />

@@ -1,0 +1,37 @@
+<section class="messenger">
+  <div class="messenger__chats-container">
+    <button
+      class="messenger__profile-button text text__caption text_secondary"
+    >Профиль
+      <svg
+        class="messenger__profile-button-arrow"
+        xmlns="http://www.w3.org/2000/svg"
+        width="6"
+        height="10"
+        viewBox="0 0 6 10"
+        fill="none"
+      >
+        <path d="M1 9L5 5L1 1" stroke="#999999" />
+      </svg></button>
+    <label>
+      <input
+        class="messenger__search text text__caption text_secondary"
+        type="text"
+        name="message"
+        id="message"
+        placeholder="Поиск"
+      />
+    </label>
+      <div class="messenger__chats">
+      {{> chats }}
+      </div>
+  </div>
+    <div class="messenger__current-chat-container">
+        {{> current-chat-header }}
+        {{> current-chat-messages-list }}
+        {{> current-chat-message-input message="Привет" }}
+    </div>
+</section>
+
+<link rel="stylesheet" href="../styles/messenger.css" />
+<link rel="stylesheet" href="../styles/text.css" />
