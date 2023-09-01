@@ -1,0 +1,46 @@
+.text {
+  font:
+    normal medium Inter,
+    sans-serif;
+  line-height: 1;
+}
+
+.text__title {
+  font-size: 2.5em;
+}
+
+.text__caption {
+  font-size: 0.6875em;
+}
+
+.text__description {
+  font-size: 1.25em;
+}
+
+.text__input {
+  font-size: 0.8125em;
+}
+
+.text_bold {
+  font-weight: bold;
+}
+
+.text_primary {
+  color: var(--primary);
+}
+
+.text_secondary {
+  color: var(--secondary);
+}
+
+.text_ascendant {
+  color: var(--blue);
+}
+
+.text_error {
+  color: var(--red);
+}
+
+.text_button {
+  color: var(--white);
+}

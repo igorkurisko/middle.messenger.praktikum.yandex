@@ -1,0 +1,35 @@
+<form class="form">
+  <fieldset class="form__fieldset">
+    <legend
+      class="text text__description text_primary form__legend"
+    >Вход</legend>
+    <label for="login" class="form__label">Логин</label>
+    <input
+      type="text"
+      name="login"
+      id="login"
+      class="text text__input text_primary form__input"
+      value={{login}}
+    />
+    <p class="text_error form__error form__error_hidden">Неправильный логин</p>
+
+    <label for="password" class="form__label">Пароль</label>
+    <input
+      type="password"
+      name="password"
+      id="password"
+      class="text text__input text_error form__input"
+      value={{password}}
+      autofocus
+    />
+    <p class="text_error form__error">Неправильный пароль</p>
+  </fieldset>
+  <button
+    type="submit"
+    class="text text__input text_button form__submit"
+  >Авторизоваться</button>
+  <button class="text text__caption text_ascendant form__link">Нет аккаунта?</button>
+</form>
+
+<link rel="stylesheet" href="../styles/form.css" />
+<link rel="stylesheet" href="../styles/text.css" />

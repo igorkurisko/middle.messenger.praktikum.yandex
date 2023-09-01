@@ -1,0 +1,16 @@
+<ul class="messenger__current-chat-messages-list">
+  {{#each messages}}
+    <li class="messenger__current-chat-message-item">
+      <p
+        class="messenger__current-chat-message text text__caption text_primary"
+      >{{message}}</p>
+      <time
+        class="messenger__current-chat-message-time text text__caption text_secondary"
+        datetime={{datetime}}
+      >{{datetime}}</time>
+    </li>
+  {{/each}}
+</ul>
+
+<link rel="stylesheet" href="../styles/messenger.css" />
+<link rel="stylesheet" href="../styles/text.css" />

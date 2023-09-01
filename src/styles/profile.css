@@ -1,0 +1,150 @@
+.profile {
+  display: flex;
+  height: 100vh;
+}
+
+.profile__form {
+  width: 100%;
+  max-width: 510px;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile__leave-container {
+  flex-basis: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background);
+}
+
+.profile__leave-button {
+  border: none;
+  background: none;
+  padding: 0;
+  display: flex;
+  cursor: pointer;
+}
+
+.profile__leave-button:hover {
+  opacity: 0.9;
+}
+
+.profile__form-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile__image-container {
+  margin-bottom: 21px;
+  position: relative;
+}
+
+.profile__image-svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile__image-icon {
+  align-self: center;
+  text-align: center;
+}
+
+.profile__form-fieldset {
+  width: 100%;
+  max-width: 510px;
+  border: none;
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+.profile__form-legend {
+  text-align: center;
+  font-size: 1em;
+  margin-bottom: 60px;
+}
+
+.profile__form-input-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--underline);
+}
+
+.profile__form-input-group:last-of-type {
+  border-bottom: none;
+}
+
+.profile__form-input {
+  border: 0;
+  outline: none;
+  text-align: right;
+  width: 50%;
+}
+
+.profile__form-input:disabled {
+  background-color: transparent;
+}
+
+.profile__form-button {
+  border: none;
+  background: none;
+  padding: 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.profile__form-button:hover {
+  opacity: 0.7;
+}
+
+.profile__form-button-group_hidden {
+  display: none;
+}
+
+.profile__form-submit {
+  border: none;
+  border-radius: 8px;
+  background: var(--blue);
+  padding: 12px 0;
+  cursor: pointer;
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.profile__form-submit:hover {
+  opacity: 0.9;
+}
+
+.profile__form-submit_hidden {
+  display: none;
+}
+
+.profile__edit-image {
+  width: 130px;
+  height: 130px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+
+  position: absolute;
+  top: 0;
+}
+
+.profile__edit-image_hidden {
+  display: none;
+}
