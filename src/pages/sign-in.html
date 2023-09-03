@@ -13,9 +13,10 @@
   <body>
     <main>
       {{#> modal}}
-        {{#*inline "body"}}
-          {{> sign-in login="Igor" password="123" }}
-        {{/inline}}
+          {{#> modal-form legend="Вход" buttonTextPrimary="Авторизоваться" buttonTextSecondary="Нет аккаунта?" }}
+            {{> input name="login" type="text" label="Логин" value="Igor" }}
+            {{> input name="password" type="password" label="Пароль" value="123" }}
+          {{/modal-form}}
       {{/modal}}
     </main>
   </body>

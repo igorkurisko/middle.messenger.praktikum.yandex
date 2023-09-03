@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="ru">
+<html lang="ru">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,9 +24,10 @@
           displayName="Igor Igor"
       }}
       {{#> modal}}
-        {{#*inline "body"}}
-          {{> avatar-upload }}
-        {{/inline}}
+          {{#> modal-form legend="Загрузить файл" buttonTextPrimary="Поменять" buttonTextSecondary="Отмена" }}
+            {{> input name="avatar" type="file" label="Аватар" visibility="hidden" }}
+            {{> avatar-button-upload }}
+          {{/modal-form}}
       {{/modal}}
     </main>
   </body>

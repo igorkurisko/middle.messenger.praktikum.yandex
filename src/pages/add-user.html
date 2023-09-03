@@ -13,10 +13,11 @@
   <body>
     <main>
       {{> messenger }}
+      
       {{#> modal}}
-        {{#*inline "body"}}
-          {{> add-user-form login="Igor" }}
-        {{/inline}}
+          {{#> modal-form legend="Добавить пользователя" buttonTextPrimary="Добавить" buttonTextSecondary="Отмена" }}
+            {{> input name="login" type="text" label="Логин" value="Igor" }}
+          {{/modal-form}}
       {{/modal}}
     </main>
   </body>
