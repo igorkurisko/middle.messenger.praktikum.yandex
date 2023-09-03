@@ -13,17 +13,15 @@
   <body>
     <main>
       {{#> modal}}
-        {{#*inline "body"}}
-          {{> sign-up
-              email="igor@igor.ru"
-              login="igor"
-              firstName="Igor"
-              secondName="Igor"
-              phone="88005553535"
-              password="123456"
-              passwordRepeat="123456"
-          }}
-        {{/inline}}
+          {{#> modal-form legend="Регистрация" buttonTextPrimary="Авторизоваться" buttonTextSecondary="Нет аккаунта?" }}    
+            {{> input name="email" type="email" label="Почта" value="igor@mail.ru" }}
+            {{> input name="login" type="text" label="Логин" value="Igor" }}
+            {{> input name="first_name" type="text" label="Имя" value="Игорь" }}
+            {{> input name="second_name" type="text" label="Фамилия" value="Игорь" }}
+            {{> input name="phone" type="tel" label="Телефон" value="88005553535" }}
+            {{> input name="password" type="password" label="Пароль" value="123" }}    
+            {{> input name="password_repeat" type="password" label="Пароль (еще раз)" value="123" }}
+          {{/modal-form}}
       {{/modal}}
     </main>
   </body>

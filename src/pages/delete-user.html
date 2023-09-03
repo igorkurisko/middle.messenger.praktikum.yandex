@@ -14,9 +14,9 @@
     <main>
       {{> messenger }}
       {{#> modal}}
-        {{#*inline "body"}}
-          {{> delete-user-form login="Igor" }}
-        {{/inline}}
+          {{#> modal-form legend="Удалить пользователя" buttonTextPrimary="Удалить" buttonTextSecondary="Отмена" }}
+            {{> input name="login" type="text" label="Логин" value="Igor" }}
+          {{/modal-form}}
       {{/modal}}
     </main>
   </body>
