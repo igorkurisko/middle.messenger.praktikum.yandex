@@ -12,16 +12,20 @@
   </head>
   <body>
     <main>
-      {{> profile
-          email="igor@igor.ru"
-          login="igor"
-          firstName="Igor"
-          secondName="Igor"
-          phone="88005553535"
-          password="123456"
-          passwordRepeat="123456"
-          displayName="Igor Igor"
-      }}
+      {{#> profile legend="Профиль"}}
+        {{#*inline "inputs"}}
+          {{> profile-input name="email" type="email" label="Почта" }}
+          {{> profile-input name="login" type="text" label="Логин" }}
+          {{> profile-input name="first_name" type="text" label="Имя" }}
+          {{> profile-input name="second_name" type="text" label="Фамилия" }}
+          {{> profile-input name="display_name" type="text" label="Имя в чате" }}
+          {{> profile-input name="phone" type="tel" label="Телефон" }}
+        {{/inline}}
+        {{#*inline "buttons"}}
+          {{> profile-button-group}}
+          {{> button text="Сохранить"}}
+        {{/inline}}
+      {{/profile}}
     </main>
   </body>
 </html>

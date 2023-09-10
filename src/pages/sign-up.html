@@ -13,15 +13,21 @@
   <body>
     <main>
       {{#> modal}}
-          {{#> modal-form legend="Регистрация" buttonTextPrimary="Авторизоваться" buttonTextSecondary="Нет аккаунта?" }}    
-            {{> input name="email" type="email" label="Почта" value="igor@mail.ru" }}
-            {{> input name="login" type="text" label="Логин" value="Igor" }}
-            {{> input name="first_name" type="text" label="Имя" value="Игорь" }}
-            {{> input name="second_name" type="text" label="Фамилия" value="Игорь" }}
-            {{> input name="phone" type="tel" label="Телефон" value="88005553535" }}
-            {{> input name="password" type="password" label="Пароль" value="123" }}    
-            {{> input name="password_repeat" type="password" label="Пароль (еще раз)" value="123" }}
-          {{/modal-form}}
+        {{#> modal-form legend="Регистрация" }}
+          {{#*inline "inputs"}}    
+            {{> input name="email" type="email" label="Почта" }}
+            {{> input name="login" type="text" label="Логин" }}
+            {{> input name="first_name" type="text" label="Имя" }}
+            {{> input name="second_name" type="text" label="Фамилия" }}
+            {{> input name="phone" type="tel" label="Телефон" }}
+            {{> input name="password" type="password" label="Пароль" }}    
+            {{> input name="password_repeat" type="password" label="Пароль (еще раз)" }}
+          {{/inline}}
+          {{#*inline "buttons"}}
+            {{> button text="Зарегистрироваться" type="submit"}}
+            {{> button text="Нет аккаунта?" type="cancel"}}
+          {{/inline}}
+        {{/modal-form}}
       {{/modal}}
     </main>
   </body>
