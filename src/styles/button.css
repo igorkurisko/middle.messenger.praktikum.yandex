@@ -1,0 +1,32 @@
+.button {
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  cursor: pointer;
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+.button_submit {
+  background: var(--blue);
+  color: var(--white);
+}
+
+.button_cancel {
+  background: none;
+  color: var(--blue);
+}
+
+.button_hidden {
+  display: none;
+}
+
+.button_disabled {
+  opacity: 0.5;
+}

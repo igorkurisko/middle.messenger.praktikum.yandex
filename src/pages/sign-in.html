@@ -13,10 +13,16 @@
   <body>
     <main>
       {{#> modal}}
-          {{#> modal-form legend="Вход" buttonTextPrimary="Авторизоваться" buttonTextSecondary="Нет аккаунта?" }}
-            {{> input name="login" type="text" label="Логин" value="Igor" }}
-            {{> input name="password" type="password" label="Пароль" value="123" }}
-          {{/modal-form}}
+        {{#> modal-form legend="Вход" }}
+          {{#*inline "inputs"}}
+            {{> input name="login" type="text" label="Логин" }}
+            {{> input name="password" type="password" label="Пароль" }}
+          {{/inline}}
+          {{#*inline "buttons"}}
+            {{> button text="Авторизоваться" type="submit"}}
+            {{> button text="Нет аккаунта?" type="cancel"}}
+          {{/inline}}
+        {{/modal-form}}
       {{/modal}}
     </main>
   </body>
