@@ -15,9 +15,15 @@
       {{> messenger }}
       
       {{#> modal}}
-          {{#> modal-form legend="Добавить пользователя" buttonTextPrimary="Добавить" buttonTextSecondary="Отмена" }}
-            {{> input name="login" type="text" label="Логин" value="Igor" }}
-          {{/modal-form}}
+        {{#> modal-form legend="Добавить пользователя" }}
+          {{#*inline "inputs"}}    
+            {{> input name="login" type="text" label="Логин" }}
+              {{/inline}}
+              {{#*inline "buttons"}}
+                {{> button text="Добавить" type="submit"}}
+                {{> button text="Отмена" type="cancel"}}
+              {{/inline}}
+        {{/modal-form}}
       {{/modal}}
     </main>
   </body>

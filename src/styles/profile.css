@@ -105,29 +105,6 @@
   opacity: 0.7;
 }
 
-.profile__form-button-group_hidden {
-  display: none;
-}
-
-.profile__form-submit {
-  border: none;
-  border-radius: 8px;
-  background: var(--blue);
-  padding: 12px 0;
-  cursor: pointer;
-  width: 100%;
-  max-width: 280px;
-  margin: 0 auto;
-}
-
-.profile__form-submit:hover {
-  opacity: 0.9;
-}
-
-.profile__form-submit_hidden {
-  display: none;
-}
-
 .profile__edit-image {
   width: 130px;
   height: 130px;

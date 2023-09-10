@@ -51,9 +51,6 @@
   text-align: center;
 }
 
-.messenger__search::after {
-}
-
 .messenger__chats {
   display: flex;
   flex-direction: column;

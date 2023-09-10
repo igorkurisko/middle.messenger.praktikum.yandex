@@ -31,106 +31,15 @@
     <div class="profile__image-container">
       <img class="profile__image" src="/src/assets/avatar.svg" alt="Avatar" />
       <div
-        class="text text__input text_button profile__edit-image {{editAvatar}}"
+        class="text text__input text_button profile__edit-image profile__edit-image_{{#if visibility}}{{visibility}}{{/if}}"
       >Поменять аватар</div>
     </div>
     <form class="profile__form">
       <fieldset class="profile__form-fieldset">
-        <legend
-          class="text text_primary profile__form-legend"
-        >{{displayName}}</legend>
-        <div class="profile__form-input-group">
-          <label for="email" class="text text__input text_primary">Почта</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            class="text text__input text_secondary profile__form-input"
-            value={{email}}
-          />
-        </div>
-        <div class="profile__form-input-group">
-          <label for="login" class="text text__input text_primary">Логин</label>
-          <input
-            type="text"
-            name="login"
-            id="login"
-            class="text text__input text_secondary profile__form-input"
-            value={{login}}
-          />
-        </div>
-        <div class="profile__form-input-group">
-          <label
-            for="first_name"
-            class="text text__input text_primary"
-          >Имя</label>
-          <input
-            type="text"
-            name="first_name"
-            id="first_name"
-            class="text text__input text_secondary profile__form-input"
-            value={{firstName}}
-          />
-        </div>
-        <div class="profile__form-input-group">
-          <label
-            for="second_name"
-            class="text text__input text_primary"
-          >Фамилия</label>
-          <input
-            type="text"
-            name="second_name"
-            id="second_name"
-            class="text text__input text_secondary profile__form-input"
-            value={{secondName}}
-          />
-        </div>
-        <div class="profile__form-input-group">
-          <label for="display_name" class="text text__input text_primary">Имя в
-            чате</label>
-          <input
-            type="text"
-            name="display_name"
-            id="display_name"
-            class="text text__input text_secondary text_secondary profile__form-input"
-            value={{displayName}}
-          />
-        </div>
-        <div class="profile__form-input-group">
-          <label
-            for="phone"
-            class="text text__input text_primary"
-          >Телефон</label>
-          <input
-            type="tel"
-            name="phone"
-            id="phone"
-            class="text text__input text_secondary profile__form-input"
-            value={{phone}}
-          />
-        </div>
+        <legend class="text text_primary profile__form-legend">{{legend}}</legend>
+        {{> inputs}}
       </fieldset>
-      <div class="profile__form-button-group">
-        <div class="profile__form-input-group">
-          <button
-            class="text text__input text_ascendant profile__form-button"
-          >Изменить данные</button>
-        </div>
-        <div class="profile__form-input-group">
-          <button
-            class="text text__input text_ascendant profile__form-button"
-          >Изменить пароль</button>
-        </div>
-        <div class="profile__form-input-group">
-          <button
-            type="submit"
-            class="text text__input text_error profile__form-button"
-          >Выйти</button>
-        </div>
-      </div>
-      <button
-        class="text text__input text_button profile__form-submit"
-      >Сохранить</button>
+      {{> buttons}}
     </form>
   </div>
 </section>

@@ -3,13 +3,9 @@
     <legend
       class="text text__description text_primary form__legend"
     >{{legend}}</legend>
-    {{> @partial-block }}
+     {{> inputs}}
   </fieldset>
-  <button
-    type="submit"
-    class="text text__input text_button form__submit"
-  >{{buttonTextPrimary}}</button>
-  <button class="text text__caption text_ascendant form__link">{{buttonTextSecondary}}</button>
+  {{> buttons}}
 </form>
 
 <link rel="stylesheet" href="../styles/form.css" />
